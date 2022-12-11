@@ -15,7 +15,11 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const markup = images
-  .map((img) => `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}"></li>звідки ця кома?`);
+const markup = images.map(
+  (
+    img //якщо видалити текст, кома залишається. Я її не знайшов.
+  ) =>
+    `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}"></li>звідки ця кома?`
+);
 
-gallery.insertAdjacentHTML("afterbegin", markup);
+gallery.insertAdjacentHTML('afterbegin', markup);

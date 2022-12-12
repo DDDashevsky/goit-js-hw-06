@@ -17,9 +17,9 @@ const gallery = document.querySelector('.gallery');
 
 const markup = images.map(
   (
-    img //якщо видалити текст, кома залишається. Я її не знайшов.
+    img //я не можу знайти, де ця кома, допоможіть
   ) =>
-    `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}"></li>звідки ця кома?`
+    `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}"></li>звідки ця кома? ->`
 );
 
 gallery.insertAdjacentHTML('afterbegin', markup);

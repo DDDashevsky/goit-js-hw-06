@@ -82,3 +82,8 @@ button {
   width: 300px;
   height: 200px;
 }
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}

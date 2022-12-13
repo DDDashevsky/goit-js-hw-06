@@ -1,12 +1,19 @@
 const list = document.querySelector('#categories');
 
-const categories = list.children;
+const categories = [...list.children];
 console.log('Number of categories:', categories.length);
 
-for (const category of categories) {
+//Не зрозумів, чому с forEach код стає декларативним?
+
+categories.forEach(function (category) {
   console.log(category.querySelector('h2').textContent);
   console.log(category.querySelector('ul').children.length);
-}
+});
+
+// for (const category of categories) {
+//   console.log(category.querySelector('h2').textContent);
+//   console.log(category.querySelector('ul').children.length);
+// }
 
 /* const firstItem = list.firstElementChild;
 const secondItem = firstItem.nextElementSibling;

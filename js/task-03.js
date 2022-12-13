@@ -15,11 +15,13 @@ const images = [
 
 const gallery = document.querySelector('.gallery');
 
-const markup = images.map(
-  (
-    img //я не можу знайти, де ця кома, допоможіть
-  ) =>
-    `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}"></li>звідки ця кома? ->`
-);
+const markup = images
+  .map(
+    (
+      img //я не можу знайти, де ця кома, допоможіть
+    ) =>
+      `<li class="gallery__item"><img class="gallery__img" src="${img.url}" alt="${img.alt}"></li>`
+  )
+  .join('');
 
 gallery.insertAdjacentHTML('afterbegin', markup);

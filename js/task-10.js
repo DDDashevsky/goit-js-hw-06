@@ -22,5 +22,5 @@ destroyBtn.addEventListener('click', destroy);
 
 function destroy(evt) {
   boxes.innerHTML = '';
-  evt.currentTarget.reset();
+  input.value = '';
 }
